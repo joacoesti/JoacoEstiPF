@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joaquín Estigarribia — Analista de Procesos &amp; Automatización</title>
+<meta name="description" content="Portfolio de Joaquín Ignacio Estigarribia. Analista de Procesos, Mejora Continua y Automatización aplicada a operaciones reales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<div class="ambient" aria-hidden="true">
+  <div class="glow glow-1" id="glow1"></div>
+  <div class="glow glow-2" id="glow2"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a href="#top" class="nav-logo">JE<span class="nav-dot">.</span></a>
+  <div class="nav-links">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <a href="assets/CV_Joaquin_Estigarribia_2026.pdf" class="nav-cta" download>
+    Descargar CV
+  </a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow reveal-up" style="--d:0">PROC&mdash;01 / Identidad</p>
+      <h1 class="reveal-up" style="--d:1">
+        Joaquín Ignacio<br>Estigarribia
+      </h1>
+      <p class="hero-role reveal-up" style="--d:2">
+        <span class="grad-text">Analista de Procesos &amp; Automatización</span>
+      </p>
+      <p class="hero-lead reveal-up" style="--d:3">
+        Licenciado en Administración orientado a procesos, operaciones y automatización.
+        Desarrollo soluciones que reducen tareas manuales, mejoran la organización y convierten
+        procesos complejos en sistemas claros, medibles y eficientes.
+      </p>
+      <div class="hero-tags reveal-up" style="--d:4">
+        <span class="tag">Python</span>
+        <span class="tag">Playwright</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Change Management</span>
+        <span class="tag">IA aplicada</span>
+      </div>
+      <div class="hero-actions reveal-up" style="--d:5">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn-ghost">Contactar</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal-up" style="--d:2">
+      <div class="photo-frame">
+        <img src="assets/profile.png" alt="Foto de Joaquín Estigarribia" id="profile-img">
+        <div class="photo-glow"></div>
+      </div>
+      <div class="photo-id">
+        <span class="proc-id">PROC&mdash;01</span>
+        <span class="proc-status status-live">DISPONIBLE</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</header>
+
+<main>
+
+<!-- ============ SOBRE MI ============ -->
+<section class="section" id="sobre-mi">
+  <p class="section-label reveal-up">PROC&mdash;02 / Sobre mí</p>
+  <div class="about-grid">
+    <div class="about-text reveal-up">
+      <h2>Traduzco operaciones reales en sistemas que funcionan</h2>
+      <p class="lead-2">
+        Me apasiona entender cómo funcionan las operaciones y encontrar formas más simples,
+        eficientes y escalables de hacer las cosas. Combino procesos, tecnología y análisis
+        para resolver problemas reales y generar impacto en el día a día de las organizaciones.
+      </p>
+      <p class="lead-2">
+        Trabajo en el cruce entre quien ejecuta la tarea y quien necesita verla estandarizada:
+        relevo el proceso real, lo documento, y cuando hace falta, lo automatizo &mdash; con código,
+        con no-code, o con lo que el problema pida.
+      </p>
+    </div>
+    <div class="skills-grid reveal-up">
+      <div class="skill-card">
+        <p class="skill-cat">Procesos y operaciones</p>
+        <p class="skill-list">Mapeo de procesos · SOPs · Mejora continua · Gestión operativa · KPIs &amp; dashboards</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-cat">Automatización</p>
+        <p class="skill-list">Python · Playwright · OCR · Integración de sistemas · Procesamiento de datos</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-cat">Datos y bases de datos</p>
+        <p class="skill-list">SQL Server · Excel avanzado · Power Query · Power BI · Supabase</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-cat">Herramientas digitales</p>
+        <p class="skill-list">Google Apps Script · AppSheet · Streamlit · GitHub · Vercel</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-cat">Change &amp; service management</p>
+        <p class="skill-list">Change Management · Incident Management · SLA Monitoring · QA Testing</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-cat">Documentación</p>
+        <p class="skill-list">Manuales operativos · Cartelería técnica · Capacitación visual · Canva</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROYECTOS DESTACADOS ============ -->
+<section class="section" id="proyectos">
+  <p class="section-label reveal-up">PROC&mdash;03 / Proyectos destacados</p>
+  <h2 class="section-title reveal-up">Cuatro formas distintas de resolver un mismo problema: la fricción operativa</h2>
+
+  <div class="proc-feed">
+
+    <!-- PROYECTO 1 -->
+    <article class="proc-card proc-card--media reveal-up" data-project="1">
+      <div class="proc-main">
+        <div class="proc-top">
+          <span class="proc-id">PROC&mdash;04</span>
+          <span class="proc-status status-live">EN USO</span>
+        </div>
+        <h3 class="proc-title">App móvil de consulta de precios &mdash; Tecnolar</h3>
+        <p class="proc-sub">Desarrollo de producto · Google AI Studio</p>
+        <p class="proc-flow">
+          <b>Input</b> &mdash; chequeadoras de precio físicas, costosas y limitadas en puntos de venta.
+          <span class="flow-arrow">&rarr;</span>
+          <b>Output</b> &mdash; app móvil que escanea código de barras y consulta en tiempo real la base de datos
+          de Tecnolar, devolviendo precio vigente o de oferta.
+        </p>
+        <div class="proc-bottom">
+          <div class="proc-metric">
+            <span class="metric-num" data-target="100">0</span><span class="metric-suffix">%</span>
+            <span class="metric-label">software, sin hardware dedicado</span>
+          </div>
+          <div class="proc-stack">
+            <span>Google AI Studio</span><span>Base de datos Tecnolar</span><span>Mobile</span>
+          </div>
+        </div>
+      </div>
+      <div class="proc-media proc-media--phones">
+        <div class="mockup-phone">
+          <img src="assets/app-precios-1.jpg" alt="Escaneo de código de barra en la app de consulta de precios Tecnolar" loading="lazy">
+        </div>
+        <div class="mockup-phone">
+          <img src="assets/app-precios-2.jpg" alt="Resultado de consulta exitosa mostrando precio en la app Tecnolar" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <!-- PROYECTO 2 -->
+    <article class="proc-card reveal-up" data-project="2">
+      <div class="proc-top">
+        <span class="proc-id">PROC&mdash;05</span>
+        <span class="proc-status status-done">COMPLETADO</span>
+      </div>
+      <h3 class="proc-title">Change Management regional &mdash; Arcos Dorados</h3>
+      <p class="proc-sub">Analista SSR Change Management · Marzo 2023 &mdash; Enero 2025</p>
+      <p class="proc-flow">
+        <b>Input</b> &mdash; solicitudes de cambio con impacto regional, múltiples aprobadores y riesgo
+        de cancelación por información incompleta.
+        <span class="flow-arrow">&rarr;</span>
+        <b>Output</b> &mdash; flujos de gestión de cambios rediseñados según criticidad y validación
+        previa en ambientes QA, coordinando equipos de Centro y Sudamérica.
+      </p>
+      <div class="proc-bottom">
+        <div class="proc-metric">
+          <span class="metric-num" data-target="100">0</span><span class="metric-suffix">%</span>
+          <span class="metric-label">de aprobación en tickets gestionados</span>
+        </div>
+        <div class="proc-stack">
+          <span>Change Management</span><span>QA Testing</span><span>Gestión regional</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROYECTO 3 -->
+    <article class="proc-card proc-card--media reveal-up" data-project="3">
+      <div class="proc-main">
+        <div class="proc-top">
+          <span class="proc-id">PROC&mdash;06</span>
+          <span class="proc-status status-live">EN USO</span>
+        </div>
+        <h3 class="proc-title">Fiscal Downloader Pro &mdash; Tecnolar</h3>
+        <p class="proc-sub">Automatización · Python + Playwright</p>
+        <p class="proc-flow">
+          <b>Input</b> &mdash; descarga manual diaria de reportes desde múltiples controladores fiscales.
+          <span class="flow-arrow">&rarr;</span>
+          <b>Output</b> &mdash; robot que accede, valida y descarga automáticamente, con programación
+          horaria y gestión simultánea de múltiples controladoras.
+        </p>
+        <div class="proc-bottom">
+          <div class="proc-metric">
+            <span class="metric-num" data-target="0" data-text="Diaria → Auto">0</span>
+            <span class="metric-label">tarea manual eliminada del día a día</span>
+          </div>
+          <div class="proc-stack">
+            <span>Python</span><span>Playwright</span><span>Scheduler</span>
+          </div>
+        </div>
+      </div>
+      <div class="proc-media proc-media--desktop">
+        <div class="mockup-desktop">
+          <div class="mockup-desktop-bar"><span></span><span></span><span></span></div>
+          <img src="assets/fiscal-downloader.png" alt="Interfaz de escritorio de Fiscal Downloader Pro mostrando gestión de controladores fiscales" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <!-- PROYECTO 4 -->
+    <article class="proc-card proc-card--media reveal-up" data-project="4">
+      <div class="proc-main">
+        <div class="proc-top">
+          <span class="proc-id">PROC&mdash;07</span>
+          <span class="proc-status status-progress">PRE&#8209;PRODUCCIÓN</span>
+        </div>
+        <h3 class="proc-title">Sistema de comandas &mdash; UNISOL</h3>
+        <p class="proc-sub">Google Sheets + Apps Script</p>
+        <p class="proc-flow">
+          <b>Input</b> &mdash; pedidos internos de Cocina y Panificadora gestionados sin trazabilidad
+          ni control de estados.
+          <span class="flow-arrow">&rarr;</span>
+          <b>Output</b> &mdash; sistema digital de comandas con confirmación de producción, historial,
+          impresión automática y control de estados en tiempo real.
+        </p>
+        <div class="proc-bottom">
+          <div class="proc-metric">
+            <span class="metric-num" data-target="100">0</span><span class="metric-suffix">%</span>
+            <span class="metric-label">funcional, en espera de paso a producción</span>
+          </div>
+          <div class="proc-stack">
+            <span>Google Sheets</span><span>Apps Script</span><span>Trazabilidad</span>
+          </div>
+        </div>
+      </div>
+      <div class="proc-media proc-media--desktop">
+        <div class="mockup-desktop">
+          <div class="mockup-desktop-bar"><span></span><span></span><span></span></div>
+          <img src="assets/comandas-unisol.png" alt="Interfaz del sistema de comandas de Fiambrería UNISOL mostrando pedidos por producto" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ OTROS PROYECTOS ============ -->
+<section class="section" id="otros-proyectos">
+  <p class="section-label reveal-up">PROC&mdash;08 / Otros proyectos</p>
+  <div class="mini-grid">
+
+    <div class="mini-card mini-card--media mini-card--wide reveal-up">
+      <p class="mini-id">PROC&mdash;09</p>
+      <h4>Ticketera de Mantenimiento &mdash; UNISOL</h4>
+      <p>Sistema de seguimiento de mantenimiento desarrollado a medida con lógica de ticketera:
+      los encargados reportan problemas desde un formulario multi-rol (sector, prioridad,
+      dispositivo afectado), el equipo técnico gestiona cada ticket con estados y observaciones,
+      y gerencia accede a un tablero con métricas en tiempo real, tendencia mensual de solicitudes
+      e historial descargable para auditoría. Incluye preventivos programados con reinicio
+      automático mensual e integración con Trello.</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--text-2); border:1px solid var(--border); padding:3px 9px; border-radius:999px;">Apps Script</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--text-2); border:1px solid var(--border); padding:3px 9px; border-radius:999px;">Google Sheets</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--text-2); border:1px solid var(--border); padding:3px 9px; border-radius:999px;">Trello API</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:.72rem; color:#22D3EE; border:1px solid rgba(34,211,238,.35); padding:3px 9px; border-radius:999px; background:rgba(34,211,238,.06);">EN USO</span>
+      </div>
+      <div class="mini-thumb" style="margin-top:16px; max-height:220px; overflow:hidden;">
+        <img src="assets/mantenimiento-form.png" alt="Formulario de reporte de problema del sistema de mantenimiento UNISOL con sector, prioridad y dispositivo" loading="lazy" style="width:100%; object-fit:cover; object-position:top;">
+      </div>
+    </div>
+
+    <div class="mini-card reveal-up">
+      <p class="mini-id">PROC&mdash;10</p>
+      <h4>App de control de stock y vencimientos &mdash; Tecnolar</h4>
+      <p>Registra unidades, bases o pallets recibidos, calcula cantidades automáticamente y diferencia
+      productos por fecha de vencimiento. Google AI Studio.</p>
+    </div>
+
+    <div class="mini-card reveal-up">
+      <p class="mini-id">PROC&mdash;11</p>
+      <h4>Reporte de cuenta corriente de empleados &mdash; Tecnolar</h4>
+      <p>Extracción automática, cálculo de saldo y envío diario por correo. Python + SQL Server + ODBC.
+      En uso.</p>
+    </div>
+
+    <div class="mini-card reveal-up">
+      <p class="mini-id">PROC&mdash;12</p>
+      <h4>Web de procesos &mdash; UNISOL</h4>
+      <p>Centraliza documentación operativa: organigrama, manuales y consulta de procedimientos
+      con chatbot. Vercel + Markdown.</p>
+    </div>
+
+    <div class="mini-card reveal-up">
+      <p class="mini-id">PROC&mdash;13</p>
+      <h4>Dashboard de novedades &mdash; Panadería</h4>
+      <p>Registro y seguimiento de incidencias operativas con reportes automáticos. Google Forms +
+      Sheets. En uso.</p>
+    </div>
+
+    <div class="mini-card reveal-up">
+      <p class="mini-id">PROC&mdash;14</p>
+      <h4>OCR de tickets</h4>
+      <p>Extracción de datos de tickets, comparación de precios y alertas de variación. Python + OCR
+      + Streamlit + Supabase.</p>
+    </div>
+
+    <div class="mini-card reveal-up">
+      <p class="mini-id">PROC&mdash;15</p>
+      <h4>Sistema de vales &mdash; Mercado</h4>
+      <p>Gestión de vales, canje, control de estados y roles de usuario. AppSheet + AI Studio.</p>
+    </div>
+
+    <div class="mini-card mini-card--media reveal-up">
+      <p class="mini-id">PROC&mdash;16</p>
+      <h4>Control de ventas por vencimiento &mdash; Supermercado</h4>
+      <p>Cruza ventas semanales con vencimientos para priorizar liquidación. Redujo el tiempo de
+      armado de planillas manuales.</p>
+      <div class="mini-thumb">
+        <img src="assets/ventas-vencimiento.png" alt="Herramienta de actualización de vencimientos cruzando ventas reales" loading="lazy">
+      </div>
+    </div>
+
+    <div class="mini-card reveal-up">
+      <p class="mini-id">PROC&mdash;17</p>
+      <h4>Automatización de RRHH</h4>
+      <p>Planilla de asistencia mensual, reportes automáticos y control de novedades.</p>
+    </div>
+
+    <div class="mini-card reveal-up">
+      <p class="mini-id">PROC&mdash;18</p>
+      <h4>Service Desk &mdash; Arcos Dorados</h4>
+      <p>977 tickets gestionados vía Invgate con calificación promedio de 5 estrellas en velocidad
+      y resolución. Dashboards de seguimiento de SLA.</p>
+    </div>
+
+    <div class="mini-card mini-card--media reveal-up">
+      <p class="mini-id">PROC&mdash;19</p>
+      <h4>Sistema de Prode &mdash; UNISOL</h4>
+      <p>Gestión de participantes, resultados y clasificaciones para torneos predictivos, con
+      tabla de posiciones y podio en vivo.</p>
+      <div class="mini-thumb">
+        <img src="assets/prode-1.png" alt="Pantalla de predicciones del sistema de Prode Mundial 2026" loading="lazy">
+      </div>
+    </div>
+
+    <div class="mini-card mini-card--media mini-card--wide reveal-up">
+      <p class="mini-id">PROC&mdash;20</p>
+      <h4>Diseño web &mdash; sitios a medida</h4>
+      <p>Diseño y desarrollo de sitios personalizados sobre Vercel: una web institucional para un
+      cliente del sector financiero (confidencial) y un sitio de evento con confirmación de
+      asistencia.</p>
+      <div class="mini-thumb mini-thumb--double">
+        <img src="assets/web-institucional.png" alt="Sitio institucional con cotizaciones de mercado en vivo, diseño confidencial" loading="lazy">
+        <img src="assets/baby-shower.png" alt="Sitio web personalizado para evento de baby shower con lista de regalos" loading="lazy">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ EXPERIENCIA ============ -->
+<section class="section" id="experiencia">
+  <p class="section-label reveal-up">PROC&mdash;20 / Experiencia profesional</p>
+  <div class="timeline">
+
+    <div class="tl-item reveal-up">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-date">Abril 2026 &mdash; Actualidad</p>
+        <h3>Analista de Procesos y Transformación Operativa</h3>
+        <p class="tl-company">UNISOL</p>
+        <p class="tl-desc">Relevo, analizo y rediseño procesos operativos en Cocina, Panificadora,
+        Abastecimiento y áreas de soporte. Desarrollo manuales de rol, SOPs, matrices RACI e
+        indicadores. Diseño herramientas digitales integrando Google Workspace, Apps Script,
+        AppSheet, automatización e IA.</p>
+      </div>
+    </div>
+
+    <div class="tl-item reveal-up">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-date">Marzo &mdash; Septiembre 2025</p>
+        <h3>Auxiliar de Recursos Humanos (Temporal)</h3>
+        <p class="tl-company">Estudio Carbajo &amp; Asociados</p>
+        <p class="tl-desc">Gestión de búsquedas laborales, administración de legajos y documentación
+        laboral. Diseño de comunicaciones internas incorporando automatización e IA para reducir
+        tareas manuales repetitivas.</p>
+      </div>
+    </div>
+
+    <div class="tl-item reveal-up">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-date">Marzo 2023 &mdash; Enero 2025</p>
+        <h3>Analista SSR Change Management</h3>
+        <p class="tl-company">Arcos Dorados</p>
+        <p class="tl-desc">Gestión de procesos de cambio con impacto regional. Validación en
+        ambientes QA y coordinación con equipos de Centro y Sudamérica.
+        <b class="tl-highlight">100% de aprobación en tickets gestionados.</b></p>
+      </div>
+    </div>
+
+    <div class="tl-item reveal-up">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-date">Septiembre 2022 &mdash; Febrero 2023</p>
+        <h3>Analista Jr. Service Desk (Invgate)</h3>
+        <p class="tl-company">Arcos Dorados</p>
+        <p class="tl-desc">Gestión de incidentes y SLA con más de 100 mesas especializadas.
+        <b class="tl-highlight">977 tickets con calificación promedio de 5 estrellas.</b></p>
+      </div>
+    </div>
+
+    <div class="tl-item reveal-up">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-date">Noviembre 2016 &mdash; Agosto 2022</p>
+        <h3>Coordinador de Centros Educativos</h3>
+        <p class="tl-company">Asociación Civil ETIS</p>
+        <p class="tl-desc">Coordinación operativa, contable y presupuestaria de centros educativos.
+        Selección, capacitación y acompañamiento de voluntarios y coordinadores.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ EDUCACION ============ -->
+<section class="section" id="educacion">
+  <p class="section-label reveal-up">PROC&mdash;21 / Educación &amp; certificaciones</p>
+  <div class="edu-grid">
+    <div class="edu-card reveal-up">
+      <p class="edu-date">2020 &mdash; 2024</p>
+      <h3>Licenciatura en Administración de Empresas</h3>
+      <p class="edu-inst">Universidad de San Isidro Dr. Plácido Marín (USI)</p>
+    </div>
+    <div class="edu-card reveal-up">
+      <p class="edu-date">2015</p>
+      <h3>Bachiller en Ciencias Económicas</h3>
+      <p class="edu-inst">Colegio Cardenal Copello</p>
+    </div>
+    <div class="edu-card reveal-up">
+      <p class="edu-date">Certificaciones</p>
+      <h3>API Testing con Postman · Power BI · Negociación Creativa</h3>
+      <p class="edu-inst">Udemy (2023&ndash;2025)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section section-contact" id="contacto">
+  <p class="section-label reveal-up">PROC&mdash;22 / Contacto</p>
+  <h2 class="contact-title reveal-up">Hablemos de tu próximo proceso</h2>
+  <p class="contact-lead reveal-up">
+    Disponible para nuevas oportunidades en análisis de procesos, automatización y mejora operativa.
+  </p>
+  <div class="contact-actions reveal-up">
+    <a href="mailto:joacoesti@gmail.com" class="btn-primary">joacoesti@gmail.com</a>
+    <a href="https://linkedin.com/in/joaquin-estigarribia" target="_blank" rel="noopener" class="btn-ghost">LinkedIn &rarr;</a>
+    <a href="assets/CV_Joaquin_Estigarribia_2026.pdf" class="btn-ghost" download>Descargar CV &darr;</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Joaquín Ignacio Estigarribia &mdash; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
