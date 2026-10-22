@@ -51,7 +51,7 @@
         Desarrollo soluciones que reducen tareas manuales, mejoran la organización y convierten
         procesos complejos en sistemas claros, medibles y eficientes.
       </p>
-      <div class="hero-tags reveal-up" style="--d:4">
+      <div class="hero-tags reveal-up" style="--d:4" data-tags="hero" data-tag-class="tag">
         <span class="tag">Python</span>
         <span class="tag">Playwright</span>
         <span class="tag">SQL Server</span>
@@ -132,7 +132,7 @@
   <h2 class="section-title reveal-up">Sistemas reales, en uso, que eliminan la fricción operativa</h2>
 
   <!-- ============ CASO DE ESTUDIO: UNISOL ENCARGOS ============ -->
-  <article class="case reveal-up" id="caso-encargos">
+  <article class="case reveal-up" id="caso-encargos" data-item="caso-encargos" data-title="Caso: UNISOL Encargos">
     <div class="case-head">
       <div class="case-chips">
         <span class="case-chip">Caso de estudio</span>
@@ -200,7 +200,7 @@
         a nombre de cada uno, entornos de prueba y producción separados, respaldo automático cada 4 horas y
         pruebas automatizadas antes de cada publicación.</p>
 
-        <div class="proc-stack case-stack">
+        <div class="proc-stack case-stack" data-tags="caso-encargos">
           <span>Cloudflare Workers</span><span>D1 · SQL</span><span>R2</span><span>JavaScript</span><span>Playwright</span>
         </div>
       </div>
@@ -222,7 +222,7 @@
   </article>
 
   <!-- ============ CASO DE ESTUDIO: CARTELERÍA AUTOMÁTICA ============ -->
-  <article class="case case--carteles reveal-up" id="caso-carteles">
+  <article class="case case--carteles reveal-up" id="caso-carteles" data-item="caso-carteles" data-title="Caso: Cartelería de ofertas">
     <div class="case-head">
       <div class="case-chips">
         <span class="case-chip">Caso de estudio</span>
@@ -292,8 +292,8 @@
         empleados dedicados a una tarea de minutos. Ese tiempo volvió a la atención y la reposición, y los
         precios salen directo del sistema, sin errores de tipeo.</p>
 
-        <div class="proc-stack case-stack">
-          <span>Importación Excel/CSV</span><span>Generación de PDF</span><span>Plantillas de diseño</span><span>Guardado automático</span>
+        <div class="proc-stack case-stack" data-tags="caso-carteles">
+          <span>Automatización documental</span><span>Generación de PDF por lotes</span><span>Plantillas parametrizables</span><span>Validación de datos (EAN)</span><span>Importación Excel/CSV</span>
         </div>
       </div>
 
@@ -316,42 +316,50 @@
   <div class="proc-feed">
 
     <!-- PROYECTO 1 -->
-    <article class="proc-card proc-card--media reveal-up" data-project="1">
+    <article class="proc-card proc-card--media reveal-up" data-item="precios" data-title="Destacado: App de precios, stock y etiquetas" data-project="1">
       <div class="proc-main">
         <div class="proc-top">
           <span class="proc-id">PROC&mdash;04</span>
           <span class="proc-status status-live">EN USO</span>
         </div>
-        <h3 class="proc-title">App móvil de consulta de precios &mdash; Tecnolar</h3>
-        <p class="proc-sub">Desarrollo de producto · Google AI Studio</p>
+        <h3 class="proc-title">App móvil de precios, stock y etiquetas &mdash; Tecnolar</h3>
+        <p class="proc-sub">Desarrollo de producto · Google AI Studio · Bluetooth</p>
         <p class="proc-flow">
-          <b>Input</b> &mdash; chequeadoras de precio físicas, costosas y limitadas en puntos de venta.
+          <b>Input</b> &mdash; chequeadoras de precio fijas y costosas, pedidos al depósito hechos de palabra
+          o en papel, y etiquetas de góndola armadas a mano.
           <span class="flow-arrow">&rarr;</span>
-          <b>Output</b> &mdash; app móvil que escanea código de barras y consulta en tiempo real la base de datos
-          de Tecnolar, devolviendo precio vigente o de oferta.
+          <b>Output</b> &mdash; una app en el celular que lee el código de barras (con la cámara o con un lector
+          Bluetooth) y consulta directo en la base de datos de Tecnolar el precio vigente, la oferta y el
+          stock. Desde la misma app se arman pedidos al depósito con el stock real a la vista, y el pickeo
+          se agiliza escaneando con el lector. Las etiquetas se imprimen en el momento en una impresora
+          térmica Bluetooth, con precio por 100&nbsp;g y precio sin impuestos nacionales.
         </p>
         <div class="proc-bottom">
           <div class="proc-metric">
-            <span class="metric-num" data-target="100">0</span><span class="metric-suffix">%</span>
-            <span class="metric-label">software, sin hardware dedicado</span>
+            <span class="metric-num" data-target="3">0</span>
+            <span class="metric-label">herramientas en una app: precios, pedidos a depósito y etiquetas</span>
           </div>
-          <div class="proc-stack">
-            <span>Google AI Studio</span><span>Base de datos Tecnolar</span><span>Mobile</span>
+          <div class="proc-stack" data-tags="precios">
+            <span>Google AI Studio</span><span>SQL</span><span>Bluetooth</span><span>Escaneo de códigos</span><span>Mobile</span>
           </div>
         </div>
       </div>
-      <div class="proc-media proc-media--phones">
-        <div class="mockup-phone">
-          <img src="assets/app-precios-1.jpg" alt="Escaneo de código de barra en la app de consulta de precios Tecnolar" loading="lazy">
+      <div class="proc-media precios-stage">
+        <div class="mockup-phone precios-phone">
+          <img src="assets/app-precios-2.jpg" alt="Resultado de una consulta en la app: producto y precio vigente" loading="lazy">
         </div>
-        <div class="mockup-phone">
-          <img src="assets/app-precios-2.jpg" alt="Resultado de consulta exitosa mostrando precio en la app Tecnolar" loading="lazy">
+        <figure class="precios-field">
+          <img src="assets/precios-gondola.jpg" alt="La app en uso en góndola junto a la impresora térmica Bluetooth" loading="lazy">
+          <figcaption>En góndola, con la impresora Bluetooth</figcaption>
+        </figure>
+        <div class="precios-label">
+          <img src="assets/precios-etiqueta.png" alt="Etiqueta de góndola impresa con precio, código de barras, precio por 100 g y precio sin impuestos nacionales" loading="lazy">
         </div>
       </div>
     </article>
 
     <!-- PROYECTO 2 -->
-    <article class="proc-card reveal-up" data-project="2">
+    <article class="proc-card reveal-up" data-item="change" data-title="Destacado: Change Management Arcos Dorados" data-project="2">
       <div class="proc-top">
         <span class="proc-id">PROC&mdash;05</span>
         <span class="proc-status status-done">COMPLETADO</span>
@@ -370,14 +378,14 @@
           <span class="metric-num" data-target="100">0</span><span class="metric-suffix">%</span>
           <span class="metric-label">de aprobación en tickets gestionados</span>
         </div>
-        <div class="proc-stack">
-          <span>Change Management</span><span>QA Testing</span><span>Gestión regional</span>
+        <div class="proc-stack" data-tags="change">
+          <span>Change Management</span><span>QA Testing</span><span>Gestión de stakeholders</span><span>Flujos de aprobación</span>
         </div>
       </div>
     </article>
 
     <!-- PROYECTO 3 -->
-    <article class="proc-card proc-card--media reveal-up" data-project="3">
+    <article class="proc-card proc-card--media reveal-up" data-item="fiscal" data-title="Destacado: Fiscal Downloader Pro" data-project="3">
       <div class="proc-main">
         <div class="proc-top">
           <span class="proc-id">PROC&mdash;06</span>
@@ -396,8 +404,8 @@
             <span class="metric-num" data-target="0" data-text="Diaria → Auto">0</span>
             <span class="metric-label">tarea manual eliminada del día a día</span>
           </div>
-          <div class="proc-stack">
-            <span>Python</span><span>Playwright</span><span>Scheduler</span>
+          <div class="proc-stack" data-tags="fiscal">
+            <span>Python</span><span>Playwright</span><span>RPA</span><span>Tareas programadas</span>
           </div>
         </div>
       </div>
@@ -410,35 +418,47 @@
     </article>
 
     <!-- PROYECTO 4 -->
-    <article class="proc-card proc-card--media reveal-up" data-project="4">
+    <article class="proc-card proc-card--media reveal-up" data-item="comandera" data-title="Destacado: Comandera de producción" data-project="4">
       <div class="proc-main">
         <div class="proc-top">
           <span class="proc-id">PROC&mdash;07</span>
-          <span class="proc-status status-progress">PRE&#8209;PRODUCCIÓN</span>
+          <span class="proc-status status-live">EN USO</span>
         </div>
-        <h3 class="proc-title">Sistema de comandas &mdash; UNISOL</h3>
-        <p class="proc-sub">Google Sheets + Apps Script</p>
+        <h3 class="proc-title">Comandera de producción &mdash; UNISOL</h3>
+        <p class="proc-sub">Pedidos internos entre sectores y producción</p>
         <p class="proc-flow">
-          <b>Input</b> &mdash; pedidos internos de Cocina y Panificadora gestionados sin trazabilidad
-          ni control de estados.
+          <b>Input</b> &mdash; Fiambrería, Unimarket, Pastas y la planificación de UNISOL pedían a Cocina y
+          Panificadora sin un canal único: sin trazabilidad, sin saber cuánto se podía producir y con
+          producción sumada a mano.
           <span class="flow-arrow">&rarr;</span>
-          <b>Output</b> &mdash; sistema digital de comandas con confirmación de producción, historial,
-          impresión automática y control de estados en tiempo real.
+          <b>Output</b> &mdash; un acceso por sector con su propio catálogo para pedir, y paneles para cada
+          área de producción: Cocina responde cada comanda con la cantidad posible, consolida la producción
+          masiva y registra lo enviado a Unimarket; el sector que pidió confirma lo recibido.
+        </p>
+        <p class="proc-control">
+          <b>Control que habilita:</b> cada pedido tiene número, fecha, hora y quién lo pidió; Cocina deja
+          registrado quién respondió y cuánto pudo producir frente a lo solicitado, así los faltantes quedan
+          a la vista. La confirmación de recepción cierra el circuito, lo enviado a Unimarket queda
+          registrado y el panel muestra en todo momento los pedidos y líneas pendientes.
         </p>
         <div class="proc-bottom">
           <div class="proc-metric">
-            <span class="metric-num" data-target="100">0</span><span class="metric-suffix">%</span>
-            <span class="metric-label">funcional, en espera de paso a producción</span>
+            <span class="metric-num" data-target="6">0</span>
+            <span class="metric-label">sectores que piden a 3 áreas de producción, en un solo sistema</span>
           </div>
-          <div class="proc-stack">
-            <span>Google Sheets</span><span>Apps Script</span><span>Trazabilidad</span>
+          <div class="proc-stack" data-tags="comandera">
+            <span>Google Apps Script</span><span>Google Sheets</span><span>Control de producción</span><span>Trazabilidad</span>
           </div>
         </div>
       </div>
-      <div class="proc-media proc-media--desktop">
+      <div class="proc-media proc-media--stack">
         <div class="mockup-desktop">
           <div class="mockup-desktop-bar"><span></span><span></span><span></span></div>
-          <img src="assets/comandas-unisol.png" alt="Interfaz del sistema de comandas de Fiambrería UNISOL mostrando pedidos por producto" loading="lazy">
+          <img src="assets/comandas-sectores.png" alt="Pantalla de acceso por sector: Fiambrería, Pedidos UNISOL, Unimarket, Pastas y Panificadora" loading="lazy">
+        </div>
+        <div class="mockup-desktop">
+          <div class="mockup-desktop-bar"><span></span><span></span><span></span></div>
+          <img src="assets/comandas-cocina.png" alt="Panel de Cocina con comandas por pedido, cantidad solicitada y cantidad posible" loading="lazy">
         </div>
       </div>
     </article>
@@ -451,8 +471,8 @@
   <p class="section-label reveal-up">PROC&mdash;08 / Otros proyectos</p>
   <div class="mini-grid">
 
-    <div class="mini-card mini-card--media mini-card--wide reveal-up">
-      <p class="mini-id">PROC&mdash;09</p>
+    <div class="mini-card mini-card--media mini-card--wide reveal-up" data-item="mantenimiento" data-title="Otro: Ticketera de Mantenimiento - UNISOL">
+      <p class="mini-id">PROC&mdash;09 <span class="proc-status status-live mini-status">EN USO</span></p>
       <h4>Ticketera de Mantenimiento &mdash; UNISOL</h4>
       <p>Sistema de seguimiento de mantenimiento desarrollado a medida con lógica de ticketera:
       los encargados reportan problemas desde un formulario multi-rol (sector, prioridad,
@@ -460,97 +480,100 @@
       y gerencia accede a un tablero con métricas en tiempo real, tendencia mensual de solicitudes
       e historial descargable para auditoría. Incluye preventivos programados con reinicio
       automático mensual e integración con Trello.</p>
-      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px;">
-        <span style="font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--text-2); border:1px solid var(--border); padding:3px 9px; border-radius:999px;">Apps Script</span>
-        <span style="font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--text-2); border:1px solid var(--border); padding:3px 9px; border-radius:999px;">Google Sheets</span>
-        <span style="font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--text-2); border:1px solid var(--border); padding:3px 9px; border-radius:999px;">Trello API</span>
-        <span style="font-family:'JetBrains Mono',monospace; font-size:.72rem; color:#22D3EE; border:1px solid rgba(34,211,238,.35); padding:3px 9px; border-radius:999px; background:rgba(34,211,238,.06);">EN USO</span>
-      </div>
+      <div class="proc-stack mini-stack" data-tags="mantenimiento"><span>Google Apps Script</span><span>Google Sheets</span><span>Trello API</span><span>Ticketera</span></div>
       <div class="mini-thumb" style="margin-top:16px; max-height:160px; overflow:hidden;">
         <img src="assets/mantenimiento-gerencia.png" alt="Tablero de gerencia con métricas en tiempo real: tickets por estado, tendencia mensual e intervenciones por sector" loading="lazy" style="width:100%; object-fit:cover; object-position:top;">
       </div>
     </div>
 
-    <div class="mini-card reveal-up">
+    <div class="mini-card reveal-up" data-item="stock" data-title="Otro: App de control de stock y vencimientos - Tecnolar">
       <p class="mini-id">PROC&mdash;10</p>
       <h4>App de control de stock y vencimientos &mdash; Tecnolar</h4>
       <p>Registra unidades, bases o pallets recibidos, calcula cantidades automáticamente y diferencia
-      productos por fecha de vencimiento. Google AI Studio.</p>
+      productos por fecha de vencimiento.</p>
+      <div class="proc-stack mini-stack" data-tags="stock"><span>Google AI Studio</span><span>SQL</span><span>Escaneo de códigos</span></div>
     </div>
 
-    <div class="mini-card reveal-up">
+    <div class="mini-card reveal-up" data-item="cuenta-corriente" data-title="Otro: Reporte de cuenta corriente de empleados - Tecnolar">
       <p class="mini-id">PROC&mdash;11</p>
       <h4>Reporte de cuenta corriente de empleados &mdash; Tecnolar</h4>
-      <p>Extracción automática, cálculo de saldo y envío diario por correo. Python + SQL Server + ODBC.
-      En uso.</p>
+      <p>Extracción automática, cálculo de saldo y envío diario por correo. En uso.</p>
+      <div class="proc-stack mini-stack" data-tags="cuenta-corriente"><span>Python</span><span>SQL Server</span><span>ODBC</span><span>Envío automático</span></div>
     </div>
 
-    <div class="mini-card reveal-up">
+    <div class="mini-card reveal-up" data-item="web-procesos" data-title="Otro: Web de procesos - UNISOL">
       <p class="mini-id">PROC&mdash;12</p>
       <h4>Web de procesos &mdash; UNISOL</h4>
       <p>Centraliza documentación operativa: organigrama, manuales y consulta de procedimientos
-      con chatbot. Vercel + Markdown.</p>
+      con chatbot.</p>
+      <div class="proc-stack mini-stack" data-tags="web-procesos"><span>Vercel</span><span>Markdown</span><span>Chatbot</span></div>
     </div>
 
-    <div class="mini-card reveal-up">
+    <div class="mini-card reveal-up" data-item="novedades" data-title="Otro: Dashboard de novedades - Panadería">
       <p class="mini-id">PROC&mdash;13</p>
       <h4>Dashboard de novedades &mdash; Panadería</h4>
-      <p>Registro y seguimiento de incidencias operativas con reportes automáticos. Google Forms +
-      Sheets. En uso.</p>
+      <p>Registro y seguimiento de incidencias operativas con reportes automáticos. En uso.</p>
+      <div class="proc-stack mini-stack" data-tags="novedades"><span>Google Forms</span><span>Google Sheets</span><span>Dashboards</span></div>
     </div>
 
-    <div class="mini-card reveal-up">
+    <div class="mini-card reveal-up" data-item="ocr" data-title="Otro: OCR de tickets">
       <p class="mini-id">PROC&mdash;14</p>
       <h4>OCR de tickets</h4>
-      <p>Extracción de datos de tickets, comparación de precios y alertas de variación. Python + OCR
-      + Streamlit + Supabase.</p>
+      <p>Extracción de datos de tickets, comparación de precios y alertas de variación.</p>
+      <div class="proc-stack mini-stack" data-tags="ocr"><span>Python</span><span>OCR</span><span>Streamlit</span><span>Supabase</span></div>
     </div>
 
-    <div class="mini-card reveal-up">
+    <div class="mini-card reveal-up" data-item="vales" data-title="Otro: Sistema de vales - Mercado">
       <p class="mini-id">PROC&mdash;15</p>
       <h4>Sistema de vales &mdash; Mercado</h4>
-      <p>Gestión de vales, canje, control de estados y roles de usuario. AppSheet + AI Studio.</p>
+      <p>Gestión de vales, canje, control de estados y roles de usuario.</p>
+      <div class="proc-stack mini-stack" data-tags="vales"><span>AppSheet</span><span>AI Studio</span><span>Roles de usuario</span></div>
     </div>
 
-    <div class="mini-card mini-card--media reveal-up">
+    <div class="mini-card mini-card--media reveal-up" data-item="vencimientos" data-title="Otro: Control de ventas por vencimiento - Supermercado">
       <p class="mini-id">PROC&mdash;16</p>
       <h4>Control de ventas por vencimiento &mdash; Supermercado</h4>
       <p>Cruza ventas semanales con vencimientos para priorizar liquidación. Redujo el tiempo de
       armado de planillas manuales.</p>
+      <div class="proc-stack mini-stack" data-tags="vencimientos"><span>Excel</span><span>Análisis de ventas</span></div>
       <div class="mini-thumb" style="max-height:160px; overflow:hidden;">
         <img src="assets/ventas-vencimiento.png" alt="Herramienta de actualización de vencimientos cruzando ventas reales" loading="lazy" style="width:100%; object-fit:cover; object-position:top;">
       </div>
     </div>
 
-    <div class="mini-card reveal-up">
+    <div class="mini-card reveal-up" data-item="rrhh" data-title="Otro: Automatización de RRHH">
       <p class="mini-id">PROC&mdash;17</p>
       <h4>Automatización de RRHH</h4>
       <p>Planilla de asistencia mensual, reportes automáticos y control de novedades.</p>
+      <div class="proc-stack mini-stack" data-tags="rrhh"><span>Reportes automáticos</span><span>Control de novedades</span></div>
     </div>
 
-    <div class="mini-card reveal-up">
+    <div class="mini-card reveal-up" data-item="service-desk" data-title="Otro: Service Desk - Arcos Dorados">
       <p class="mini-id">PROC&mdash;18</p>
       <h4>Service Desk &mdash; Arcos Dorados</h4>
       <p>977 tickets gestionados vía Invgate con calificación promedio de 5 estrellas en velocidad
       y resolución. Dashboards de seguimiento de SLA.</p>
+      <div class="proc-stack mini-stack" data-tags="service-desk"><span>Invgate</span><span>SLA</span><span>Dashboards</span></div>
     </div>
 
-    <div class="mini-card mini-card--media reveal-up">
+    <div class="mini-card mini-card--media reveal-up" data-item="prode" data-title="Otro: Sistema de Prode - UNISOL">
       <p class="mini-id">PROC&mdash;19</p>
       <h4>Sistema de Prode &mdash; UNISOL</h4>
       <p>Gestión de participantes, resultados y clasificaciones para torneos predictivos, con
       tabla de posiciones y podio en vivo.</p>
+      <div class="proc-stack mini-stack" data-tags="prode"><span>Web app</span><span>Rankings en vivo</span></div>
       <div class="mini-thumb" style="max-height:160px; overflow:hidden;">
         <img src="assets/prode-1.png" alt="Pantalla de predicciones del sistema de Prode Mundial 2026" loading="lazy" style="width:100%; object-fit:cover; object-position:top;">
       </div>
     </div>
 
-    <div class="mini-card mini-card--media mini-card--wide reveal-up">
+    <div class="mini-card mini-card--media mini-card--wide reveal-up" data-item="diseno-web" data-title="Otro: Diseño web - sitios a medida">
       <p class="mini-id">PROC&mdash;20</p>
       <h4>Diseño web &mdash; sitios a medida</h4>
       <p>Diseño y desarrollo de sitios personalizados sobre Vercel: una web institucional para un
       cliente del sector financiero (confidencial) y un sitio de evento con confirmación de
       asistencia.</p>
+      <div class="proc-stack mini-stack" data-tags="diseno-web"><span>Vercel</span><span>Diseño UI</span></div>
       <div class="mini-thumb mini-thumb--double" style="max-height:160px; overflow:hidden;">
         <img src="assets/web-institucional.png" alt="Sitio institucional con cotizaciones de mercado en vivo, diseño confidencial" loading="lazy" style="width:100%; object-fit:cover; object-position:top;">
         <img src="assets/baby-shower.png" alt="Sitio web personalizado para evento de baby shower con lista de regalos" loading="lazy" style="width:100%; object-fit:cover; object-position:top;">

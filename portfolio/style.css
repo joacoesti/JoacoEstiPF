@@ -574,3 +574,44 @@ h1{
 @media (max-width: 960px){
   .case-stage--carteles .case-shot--front, .case-stage--carteles .case-shot--back, .case-print{ position:static; width:100%; transform:none; }
 }
+.proc-media--stack{ flex-direction:column; gap:14px; }
+.proc-media--stack .mockup-desktop:nth-child(2){ width:88%; align-self:flex-end; margin-top:-34px; box-shadow:0 20px 50px rgba(0,0,0,.6), 0 0 0 1px rgba(124,92,255,.25); }
+
+/* ---- editor: elementos ocultos ---- */
+[hidden]{ display:none !important; }
+.proc-stack:empty{ display:none; }
+
+/* ---- etiquetas en fichas secundarias ---- */
+.mini-stack{ margin-top:12px; }
+.mini-stack span{ font-size:.68rem; padding:3px 9px; }
+.mini-status{ font-size:.66rem; margin-left:8px; vertical-align:1px; }
+
+/* ---- comandera: bloque de control ---- */
+.proc-control{ font-size:.88rem; color:var(--text-2); line-height:1.65; margin:-8px 0 24px; padding:12px 16px;
+  border-left:2px solid var(--violet); background:rgba(124,92,255,.05); border-radius:0 10px 10px 0; max-width:760px; }
+.proc-control b{ color:var(--text); }
+
+/* ---- app de precios: composición ---- */
+.precios-stage{ position:relative; min-height:380px; display:block; }
+.precios-field{ position:absolute; left:0; top:0; width:58%; margin:0; border-radius:14px; overflow:hidden;
+  border:1px solid var(--border-strong); box-shadow:0 18px 44px rgba(0,0,0,.55); transition:transform .4s var(--ease); }
+.precios-field img{ width:100%; display:block; aspect-ratio:375/463; object-fit:cover; }
+.precios-field figcaption{ position:absolute; left:0; right:0; bottom:0; padding:22px 10px 8px; font-family:'JetBrains Mono', monospace;
+  font-size:.66rem; color:#fff; background:linear-gradient(transparent, rgba(0,0,0,.75)); }
+.precios-phone{ position:absolute; right:0; top:26px; width:132px; }
+.precios-label{ position:absolute; right:6px; bottom:0; width:56%; padding:5px; background:#fff; border-radius:6px;
+  transform:rotate(-3deg); box-shadow:0 18px 40px rgba(0,0,0,.55); transition:transform .5s var(--ease); }
+.precios-label img{ width:100%; display:block; }
+.proc-card:hover .precios-field{ transform:translateY(-4px); }
+.proc-card:hover .precios-label{ transform:rotate(-1deg) translateY(-6px); }
+@media (max-width:900px){
+  .precios-stage{ min-height:0; display:flex; flex-direction:column; gap:14px; align-items:center; }
+  .precios-field, .precios-phone, .precios-label{ position:static; transform:none; }
+  .precios-field{ width:100%; max-width:340px; } .precios-label{ width:100%; max-width:340px; }
+}
+.precios-field figcaption{ top:0; bottom:auto; padding:8px 10px 22px; background:linear-gradient(rgba(0,0,0,.75), transparent); }
+@media (max-width:900px){
+  .precios-field{ position:relative; }
+  .precios-phone{ display:none; }
+  .precios-label{ max-width:300px; }
+}
