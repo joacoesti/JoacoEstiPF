@@ -544,3 +544,33 @@ h1{
 }
 .case-head .proc-id{ white-space:nowrap; }
 @media (min-width: 961px){ .case-stage{ align-self:center; } }
+
+/* ---- Caso: Cartelería (identidad amarilla/verde UNISOL) ---- */
+.case--carteles{
+  --case-a:#E9C23A; --case-b:#2BB673;
+  border-color: rgba(233,194,58,.35);
+  background:
+    radial-gradient(600px 300px at 100% 0%, rgba(233,194,58,.11), transparent 70%),
+    radial-gradient(500px 260px at 0% 100%, rgba(43,182,115,.09), transparent 70%),
+    rgba(255,255,255,.03);
+}
+.case--carteles .case-chip{ background:linear-gradient(90deg, #E9C23A, #F3DD8A); }
+.case--carteles .case-logo{ background:linear-gradient(135deg, #0B5A3A, #06422A); color:#E9C23A; box-shadow:0 0 0 1px rgba(233,194,58,.3) inset, 0 10px 30px rgba(233,194,58,.2); }
+.case--carteles .case-logo::after{ background:#E9C23A; }
+.case--carteles .case-num{ color:#E9C23A; font-size:1.55rem; }
+.case--carteles .case-stat:first-child .case-num{ color:#2BB673; }
+.case--carteles .case-num .metric-num{ text-shadow:0 0 22px rgba(233,194,58,.35); }
+.case--carteles .flow-step{ color:#E9C23A; border-color:rgba(233,194,58,.5); }
+.case-stage--carteles .case-shot--front{ width:62%; top:150px; left:-10px; right:auto; }
+.case-stage--carteles .case-shot--back{ left:auto; right:0; width:92%; }
+.case-print{
+  position:absolute; right:-8px; top:210px; width:52%;
+  border-radius:8px; overflow:hidden; transform:rotate(-3deg);
+  box-shadow:0 24px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(233,194,58,.35);
+  transition: transform .5s var(--ease);
+}
+.case-print img{ width:100%; display:block; }
+.case:hover .case-print{ transform:rotate(-1deg) translateY(-6px); }
+@media (max-width: 960px){
+  .case-stage--carteles .case-shot--front, .case-stage--carteles .case-shot--back, .case-print{ position:static; width:100%; transform:none; }
+}
