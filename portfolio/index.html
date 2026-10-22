@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joaquín Estigarribia — Responsable de Procesos y Transformación Operativa</title>
-<meta name="description" content="Portfolio de Joaquín Ignacio Estigarribia. Responsable de Procesos, Mejora Continua y Automatización aplicada a operaciones reales.">
+<title>Joaquín Estigarribia — Analista de Procesos &amp; Automatización</title>
+<meta name="description" content="Portfolio de Joaquín Ignacio Estigarribia. Analista de Procesos, Mejora Continua y Automatización aplicada a operaciones reales.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
         Joaquín Ignacio<br>Estigarribia
       </h1>
       <p class="hero-role reveal-up" style="--d:2">
-        <span class="grad-text">Responsable de Procesos y Transformación Operativa</span>
+        <span class="grad-text">Analista de Procesos &amp; Automatización</span>
       </p>
       <p class="hero-lead reveal-up" style="--d:3">
         Licenciado en Administración orientado a procesos, operaciones y automatización.
@@ -129,7 +129,97 @@
 <!-- ============ PROYECTOS DESTACADOS ============ -->
 <section class="section" id="proyectos">
   <p class="section-label reveal-up">PROC&mdash;03 / Proyectos destacados</p>
-  <h2 class="section-title reveal-up">Cuatro formas distintas de resolver un mismo problema: la fricción operativa</h2>
+  <h2 class="section-title reveal-up">Sistemas reales, en uso, que eliminan la fricción operativa</h2>
+
+  <!-- ============ CASO DE ESTUDIO: UNISOL ENCARGOS ============ -->
+  <article class="case reveal-up" id="caso-encargos">
+    <div class="case-head">
+      <div class="case-chips">
+        <span class="case-chip">Caso de estudio</span>
+        <span class="proc-status status-live">EN PRODUCCIÓN</span>
+      </div>
+      <span class="proc-id">PROC&mdash;03A</span>
+    </div>
+
+    <div class="case-brand">
+      <span class="case-logo" aria-hidden="true">U</span>
+      <div>
+        <h3 class="case-title">UNISOL Encargos</h3>
+        <p class="case-tag">Plataforma de pedidos anticipados para fechas especiales: del pedido del cliente
+        a la producción y la entrega, en un solo sistema.</p>
+      </div>
+    </div>
+
+    <div class="case-stats">
+      <div class="case-stat">
+        <span class="case-num"><span class="metric-num" data-target="130">0</span>+</span>
+        <span class="case-lbl">pedidos tomados en la primera campaña</span>
+      </div>
+      <div class="case-stat">
+        <span class="case-num"><span class="metric-num" data-target="133">0</span></span>
+        <span class="case-lbl">productos en catálogo, por código o nombre</span>
+      </div>
+      <div class="case-stat">
+        <span class="case-num"><span class="metric-num" data-target="3">0</span></span>
+        <span class="case-lbl">canales de venta: UNISOL, Unimarket e interno</span>
+      </div>
+      <div class="case-stat">
+        <span class="case-num"><span class="metric-num" data-target="4">0</span></span>
+        <span class="case-lbl">turnos de retiro con cupo y numeración propia</span>
+      </div>
+    </div>
+
+    <div class="case-body">
+      <div class="case-text">
+        <p class="case-problem"><b>El problema.</b> Día de la Madre, Navidad y Año Nuevo concentran cientos de
+        pedidos en pocos días. Se tomaban en papel y planillas: sin control de cupo por horario,
+        producción sumada a mano y retiros desordenados en el mostrador.</p>
+
+        <ol class="case-flow">
+          <li>
+            <span class="flow-step">01</span>
+            <div><b>Toma del pedido</b>
+            <p>Flujo en tres pasos (productos, retiro, confirmación), búsqueda por código, unidades o kilos
+            con decimales y turno con cupo. Si se corta internet, reintenta sin duplicar el pedido.</p></div>
+          </li>
+          <li>
+            <span class="flow-step">02</span>
+            <div><b>Producción</b>
+            <p>Hojas por sector (Panificadora, Pastelería) con totales por turno y canal, listas para imprimir
+            en comandera.</p></div>
+          </li>
+          <li>
+            <span class="flow-step">03</span>
+            <div><b>Caja y entrega</b>
+            <p>Ticket con número de turno (T3&#8209;0001) y estados Pendiente &rarr; En armado &rarr; Listo &rarr;
+            Entregado. Caja encuentra cada pedido por su número.</p></div>
+          </li>
+        </ol>
+
+        <p class="case-under"><b>Por detrás:</b> usuarios por rol (caja, producción, toma de pedidos) con historial
+        a nombre de cada uno, entornos de prueba y producción separados, respaldo automático cada 4 horas y
+        pruebas automatizadas antes de cada publicación.</p>
+
+        <div class="proc-stack case-stack">
+          <span>Cloudflare Workers</span><span>D1 · SQL</span><span>R2</span><span>JavaScript</span><span>Playwright</span>
+        </div>
+      </div>
+
+      <div class="case-stage">
+        <div class="mockup-desktop case-shot case-shot--back">
+          <div class="mockup-desktop-bar"><span></span><span></span><span></span></div>
+          <img src="assets/encargos-cliente.png" alt="Pantalla del cliente de UNISOL Encargos: elección de fecha, búsqueda y catálogo de productos" loading="lazy">
+        </div>
+        <div class="mockup-desktop case-shot case-shot--front">
+          <div class="mockup-desktop-bar"><span></span><span></span><span></span></div>
+          <img src="assets/encargos-panel.png" alt="Panel de administración con pedidos por estado, próximos retiros por turno y pedidos por día" loading="lazy">
+        </div>
+        <div class="case-ticket">
+          <img src="assets/encargos-ticket.png" alt="Ticket impreso del pedido T3-0001 con día y turno de retiro" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </article>
 
   <div class="proc-feed">
 
@@ -387,7 +477,7 @@
       <div class="tl-marker"></div>
       <div class="tl-content">
         <p class="tl-date">Abril 2026 &mdash; Actualidad</p>
-        <h3>Responsable de Procesos y Transformación Operativa</h3>
+        <h3>Analista de Procesos y Transformación Operativa</h3>
         <p class="tl-company">UNISOL</p>
         <p class="tl-desc">Relevo, analizo y rediseño procesos operativos en Cocina, Panificadora,
         Abastecimiento y áreas de soporte. Desarrollo manuales de rol, SOPs, matrices RACI e

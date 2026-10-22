@@ -32,7 +32,7 @@ if (!isTouchDevice && dot && ring) {
   }
   animateRing();
 
-  document.querySelectorAll('a, .proc-card, .skill-card, .mini-card, .edu-card').forEach((el) => {
+  document.querySelectorAll('a, .proc-card, .skill-card, .mini-card, .edu-card, .case').forEach((el) => {
     el.addEventListener('mouseenter', () => {
       ring.style.width = '54px';
       ring.style.height = '54px';
